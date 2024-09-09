@@ -30,15 +30,15 @@ const projects = (await getCollection("work"))
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Hello, my name is Jeanine White"
-					tagline="I am a Creative Developer who is currently based in Portland, Oregon."
+					title="Hello, my name is Maks Fisli"
+					tagline="I am a Developer who is currently based in Vancouver, Canada."
 					align="start"
 				>
 					<div class="roles">
 						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill
 						>
 						<Pill
-							><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill
+							><Icon icon="microphone-stage" size="1.33em" /> Researcher</Pill
 						>
 						<Pill
 							><Icon icon="pencil-line" size="1.33em" /> Writer</Pill
@@ -47,7 +47,7 @@ const projects = (await getCollection("work"))
 				</Hero>
 
 				<img
-					alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
+					alt="Maks Fisli smiling in a red plaid shirt and tortoise shell glasses"
 					width="480"
 					height="620"
 					src="/assets/portrait.jpg"
@@ -84,35 +84,6 @@ const projects = (await getCollection("work"))
 						View All
 						<Icon icon="arrow-right" size="1.2em" />
 					</CallToAction>
-				</div>
-			</section>
-
-			<section class="section with-background bg-variant">
-				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
-					<p>
-						I have been fortunate enough to receive praise for my
-						work in several publications. Take a look below to learn
-						more.
-					</p>
-				</header>
-
-				<div class="gallery">
-					<Grid variant="small">
-						{
-							[
-								"Medium",
-								"BuzzFeed",
-								"The Next Web",
-								"awwwards.",
-								"TechCrunch",
-							].map((brand) => (
-								<li class="mention-card">
-									<p>{brand}</p>
-								</li>
-							))
-						}
-					</Grid>
 				</div>
 			</section>
 		</main>
