@@ -1,6 +1,7 @@
 ---
 title: Squad 44
 publishDate: 2024-09-01 00:00:00
+order: 9
 img: /assets/squad44.jpg
 img_alt: Iridescent ripples of a bright blue and pink liquid
 description: |

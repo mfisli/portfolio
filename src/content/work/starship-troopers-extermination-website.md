@@ -1,6 +1,7 @@
 ---
 title: Starship Troopers Extermination
 publishDate: 2024-09-01 00:00:00
+order: 4
 img: /assets/ste.jpg
 img_alt: Iridescent ripples of a bright blue and pink liquid
 description: |
