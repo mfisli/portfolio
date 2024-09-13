@@ -6,20 +6,20 @@ import Hero from "../components/Hero.astro";
 ---
 
 <BaseLayout
-	title="About | Jeanine White"
-	description="About Jeanine White Lorem Ipsum"
+	title="About | Maks Fisli"
+	description="About Maks Fisli's background"
 >
 	<div class="stack gap-20">
 		<main class="wrapper about">
 			<Hero
 				title="About"
-				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+				tagline="Read below to learn more about myself."
 			>
 				<img
 					width="1553"
 					height="873"
-					src="/assets/at-work.jpg"
-					alt="Jeanine White at work with a colleague"
+					src="/assets/code.jpg"
+					alt="Lines of code on a monitor"
 				/>
 			</Hero>
 
@@ -27,43 +27,65 @@ import Hero from "../components/Hero.astro";
 				<h2 class="section-title">Background</h2>
 				<div class="content">
 					<p>
-						Lorem ipsum dolor sit amet, <a
-							href="https://astro.build/">Astro</a
-						> makes people happy. Sed do eiusmod tempor incididunt ut
-						labore et dolore magna aliqua. Proin nibh nisl condimentum
-						id venenatis a condimentum vitae. Dapibus ultrices in iaculis
-						nunc. Arcu odio ut sem nulla pharetra diam sit amet. Diam
-						quis enim lobortis scelerisque fermentum dui faucibus in
-						ornare.
+						I've worked in tech for about 8 years now in industries
+						that include telecommunications, public art works, and
+						video games. I've had the role of Web Developer and
+						Front End Engineer while designing and developing
+						various websites and applications for web and mobile. I
+						use tools like React, Angular, and Ember and my main
+						language is JavaScript and TypeScript with smaller work
+						done using PHP and Python. I have mentored peers, led
+						projects, and have a passion for giving educational
+						presentations.
 					</p>
 					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et
-						egestas. Eget gravida cum sociis natoque penatibus. Cras
-						fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed
-						felis eget velit. Id diam vel quam elementum pulvinar
-						etiam non.
+						I'm a big believer in automated testing. A project I'm
+						particularly proud of used Test Driven Development that
+						put a big focus on stability and confidence. Using Jest
+						and the React Testing Library I contributed 1000+ unit,
+						integration, and end-to-end tests. This approach really
+						pushed me to implement best practices from the start
+						because cutting corners during implementation makes
+						writing tests much more difficult.
 					</p>
 					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut.
-						Sed enim ut sem viverra aliquet eget sit amet. Lacus
-						luctus accumsan tortor posuere ac ut consequat semper
-						viverra. Viverra accumsan in nisl nisi scelerisque eu
-						ultrices. In massa tempor nec feugiat nisl pretium
-						fusce.
+						When I'm not programming, I'm usually at the gym (ask me
+						about Push, Pull, Legs), reading science fiction (have
+						you read Necromancer yet?), or enjoying the simple
+						pleasure of a walk with music.
 					</p>
 				</div>
 			</section>
 			<section>
 				<h2 class="section-title">Education</h2>
 				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
+					<p>
+						British Columbia Institute of Technology <br />
+						<em
+							>Computer Systems Technology, 2 year Computer
+							Science diploma</em
+						>
+					</p>
+					<p>
+						University of British Columbia<br />
+						<em
+							>Bachelors of Arts, 4 year English Literature degree</em
+						>
+					</p>
 				</div>
 			</section>
 			<section>
 				<h2 class="section-title">Skills</h2>
 				<div class="content">
-					<p>officia unde omnis</p>
+					<ul>
+						<li>JavaScript and TypeScript</li>
+						<li>HTML and CSS (including JSX and SCSS)</li>
+						<li>React with Redux Toolkit and React Query</li>
+						<li>Jest and React Testing Library</li>
+						<li>Angular</li>
+						<li>Ember</li>
+						<li>Wordpress, Webflow, Astro</li>
+					</ul>
 				</div>
 			</section>
 		</main>
@@ -77,6 +99,10 @@ import Hero from "../components/Hero.astro";
 		display: flex;
 		flex-direction: column;
 		gap: 3.5rem;
+	}
+
+	p {
+		margin-bottom: 1.5rem;
 	}
 
 	img {
