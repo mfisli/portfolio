@@ -14,3 +14,4 @@ tags:
 
 ## More Details Coming Soon ...
 
+See the project live here: <a href="https://www.joinsquad.com/" target="_blank">Squad</a>

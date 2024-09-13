@@ -14,3 +14,5 @@ tags:
 
 ## More Details Coming Soon ...
 
+See the project live here: <a href="https://www.starshiptroopersextermination.com/" target="_blank">Starship Troopers Extermination</a>
+

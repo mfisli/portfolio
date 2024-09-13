@@ -7,10 +7,11 @@ img_alt: Iridescent ripples of a bright blue and pink liquid
 description: |
   Using WebFlow we designed and built a corporate website for Offworld Industries games studio
 tags:
+  - Design
   - Development
-  - Mentorship
-  - VoIP
+  - Content Management System
 ---
 
-## More details coming soon ...
+## More Details Coming Soon ...
 
+See the project live here: <a href="https://www.offworldindustries.com/" target="_blank">Offworld Industries</a>
