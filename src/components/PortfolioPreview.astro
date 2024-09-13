@@ -32,11 +32,14 @@ const { data, slug } = Astro.props.project;
         font-family: var(--font-brand);
         font-size: var(--text-lg);
         font-weight: 500;
-        transition: box-shadow var(--theme-transition);
+        transition:
+            box-shadow var(--theme-transition),
+            transform var(--theme-transition);
     }
 
     .card:hover {
         box-shadow: var(--shadow-md);
+        transform: scale(1.02);
     }
 
     .title {
