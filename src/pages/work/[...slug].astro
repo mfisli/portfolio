@@ -53,6 +53,8 @@ const { Content } = await entry.render();
                             <img
                                 src={entry.data.img}
                                 alt={entry.data.img_alt || ""}
+                                transition:name={entry.data.img}
+                                style={"border-radius: 1.5rem"}
                             />
                         )
                     }
