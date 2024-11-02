@@ -7,13 +7,13 @@ img_alt: Planets orbiting the sun
 description: |
   Using React and ThreeJS I created our solar system in 3D that runs in the browser
 tags:
-  - Design
-  - Development
-  - Content Management System
+  - 3D rendering
+  - Education
+  - Personal Project
 type: personal
 ---
 
-## More Details Coming Soon ...
+## Pale Blue Dot
 
 See the project live here: <a href="https://mfisli.github.io/solar-system/" target="_blank">Solar System</a>
 
