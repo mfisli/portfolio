@@ -3,12 +3,13 @@ title: Beyond The Wire
 publishDate: 2024-09-01 00:00:00
 order: 7
 img: /assets/btw.jpg
-img_alt: Iridescent ripples of a bright blue and pink liquid
+img_alt: World War 1 trenches and fighting
 description: |
   Using Forestry and Eleventy we expanded the features for the Beyond The Wire website.
 tags:
   - Development
   - Content Management System
+type: professional
 ---
 
 ## 100 Players In A Single WWI Map

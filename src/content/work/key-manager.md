@@ -3,13 +3,14 @@ title: Key Manager
 publishDate: 2024-09-01 00:00:00
 order: 8
 img: /assets/desk-phone.jpg
-img_alt: Iridescent ripples of a bright blue and pink liquid
+img_alt: Office desk phone
 description: |
   Using Angular Front End and a PHP backend we designed and built an app for the remote provisioning of business phones
 tags:
   - Design
   - Development
   - VoIP
+type: professional
 ---
 
 ## Remote Updates To Business Phones

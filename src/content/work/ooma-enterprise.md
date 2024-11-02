@@ -3,13 +3,14 @@ title: Ooma Enterprise
 publishDate: 2024-09-01 00:00:00
 order: 1
 img: /assets/oe.jpg
-img_alt: Iridescent ripples of a bright blue and pink liquid
+img_alt: Calling application on a cell phone
 description: |
   Using an Ember Front End and an Erlang Kazoo backend we designed and built a unified communications app for business phones
 tags:
   - Development
   - Mentorship
   - VoIP
+type: professional
 ---
 
 ## Unified Communications
