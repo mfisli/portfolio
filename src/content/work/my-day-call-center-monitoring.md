@@ -3,13 +3,14 @@ title: My Day Call Center Monitoring
 publishDate: 2024-09-01 00:00:00
 order: 2
 img: /assets/myday.jpg
-img_alt: Iridescent ripples of a bright blue and pink liquid
+img_alt: Dashboard with charts and numbers
 description: |
   Using an Angular Front End and an Erlang Kazoo backend we designed and built an app for monitoring the events in a call center
 tags:
   - Design
   - Development
   - VoIP
+type: professional
 ---
 
 ## How Many Calls Did You Have Today?
