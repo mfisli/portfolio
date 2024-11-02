@@ -8,9 +8,13 @@ import PortfolioPreview from "../components/PortfolioPreview.astro";
 import Hero from "../components/Hero.astro";
 import Grid from "../components/Grid.astro";
 
-const projects = (await getCollection("work")).sort(
-    (a, b) => a.data.order - b.data.order,
-);
+const projectsProfessional = (await getCollection("work"))
+    .filter((entry) => entry.data.type === "professional")
+    .sort((a, b) => a.data.order - b.data.order);
+
+const projectsPersonal = (await getCollection("work"))
+    .filter((entry) => entry.data.type === "personal")
+    .sort((a, b) => a.data.order - b.data.order);
 ---
 
 <BaseLayout
@@ -26,7 +30,17 @@ const projects = (await getCollection("work")).sort(
             />
             <Grid variant="offset">
                 {
-                    projects.map((project) => (
+                    projectsProfessional.map((project) => (
+                        <li>
+                            <PortfolioPreview project={project} />
+                        </li>
+                    ))
+                }
+            </Grid>
+            <h2>Personal Projects</h2>
+            <Grid>
+                {
+                    projectsPersonal.map((project) => (
                         <li>
                             <PortfolioPreview project={project} />
                         </li>
