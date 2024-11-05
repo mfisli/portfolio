@@ -140,6 +140,41 @@ a {
 	color: var(--link-color);
 }
 
+button {
+	cursor: pointer;
+}
+
+.btn-secondary {
+	background-color: var(--gray-900);
+	border: 1px solid var(--gray-0);
+	color: var(--gray-0);
+	border-radius: 50px;
+	padding: 0.5rem 1rem;
+	margin-bottom: 1rem;
+	color: var(--gray-0);
+}
+
+.btn-secondary:hover {
+	background-color: var(--gray-0);
+	border: 1px solid var(--gray-900);
+	color: var(--gray-900);
+}
+
+.btn-tertiary {
+	background-color: var(--gray-0);
+	border: 1px solid var(--gray-900);
+	color: var(--gray-900);
+	border-radius: 50px;
+	padding: 0.5rem 1rem;
+	margin-bottom: 1rem;
+}
+
+.btn-tertiary:hover {
+	background-color: var(--gray-900);
+	border: 1px solid var(--gray-0);
+	color: var(--gray-0);
+}
+
 h1,
 h2,
 h3,
@@ -172,6 +207,14 @@ h5 {
 }
 
 /* Utilities */
+
+.hidden {
+	visibility: hidden;
+}
+
+.modal-hidden {
+	display: none;
+}
 
 .sr-only {
 	position: absolute;

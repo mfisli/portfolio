@@ -1,0 +1,21 @@
+<script is:inline src="https://www.googletagmanager.com/gtag/js?id=G-2XY60D89Q7"
+></script>
+
+<script>
+    document.addEventListener("astro:page-load", () => {
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function gtag(...args) {
+            window.dataLayer.push(arguments);
+        };
+        window.gtag("js", new Date());
+
+        window.gtag("consent", "default", {
+            ad_storage: "denied",
+            ad_user_data: "denied",
+            ad_personalization: "denied",
+            analytics_storage: "denied",
+        });
+
+        window.gtag("config", "G-2XY60D89Q7");
+    });
+</script>

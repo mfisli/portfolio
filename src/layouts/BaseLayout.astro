@@ -1,10 +1,10 @@
 ---
 import { ViewTransitions } from "astro:transitions";
-
-// Component Imports
 import MainHead from "../components/MainHead.astro";
 import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
+import ConsentTrackingHead from "../components/consent/ConsentTrackingHead.astro";
+import ConsentConfig from "../components/consent/ConsentConfig.astro";
 
 interface Props {
     title?: string | undefined;
@@ -17,13 +17,41 @@ const { title, description } = Astro.props;
 <html lang="en">
     <head>
         <MainHead title={title} description={description} />
+        <ConsentTrackingHead />
         <ViewTransitions />
     </head>
     <body>
         <div class="stack backgrounds">
             <Nav />
             <slot />
-            <Footer />
+            <div transition:persist="consent-persist" id="cc-container">
+                <ConsentConfig />
+                <script is:inline>
+                    // Restore the `show--consent` class if it was present before the page swap
+                    document.addEventListener(
+                        "astro:before-preparation",
+                        () => {
+                            const htmlClassName =
+                                window.document.documentElement.className;
+                            const consentClassPresent = htmlClassName.includes(
+                                "show--consent",
+                            )
+                                ? true
+                                : false;
+                            window._showConsentClass = consentClassPresent;
+                        },
+                    );
+
+                    document.addEventListener("astro:before-swap", (event) => {
+                        const showConsent = window._showConsentClass
+                            ? ` show--consent`
+                            : "";
+                        event.newDocument.documentElement.className +=
+                            showConsent;
+                    });
+                </script>
+                <Footer />
+            </div>
         </div>
 
         <script>
